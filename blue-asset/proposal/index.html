@@ -134,6 +134,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
  .mbar .btn{flex:1;padding:12px 10px;font-size:15px}
  body{padding-bottom:70px}
 }
+.ba{margin-top:30px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 4px 18px rgba(19,22,40,.04)}
+.ba-head,.ba-row{display:grid;grid-template-columns:150px 1fr 1fr}
+.ba-head span{padding:12px 20px;font-size:12.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+.ba-head span:last-child{color:var(--blue);background:#eaf3fc}
+.ba-row{border-top:1px solid var(--line)}
+.ba-row>div{padding:18px 20px;font-size:15.5px}
+.ba-k{font-weight:700;color:var(--navy)}
+.ba-b{color:var(--muted)}
+.ba-a{color:var(--navy);background:#f3f8fd;font-weight:500;position:relative;padding-left:44px!important}
+.ba-a:before{content:"";position:absolute;left:18px;top:21px;width:15px;height:15px;border-radius:50%;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") center/11px no-repeat}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.role{background:var(--navy);color:#dbe2ee;border-radius:14px;padding:18px 22px;font-size:15.5px}
+.role b{color:#8fc1f0}
+@media (max-width:700px){.ba-head{display:none}.ba-row{grid-template-columns:1fr}.ba-row>div{padding:10px 18px}.ba-k{padding-top:16px!important}.ba-b:before{content:"Before: ";font-weight:600;color:var(--ink)}.ba-a{margin:0 12px 14px;border-radius:10px}.roles{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -153,8 +167,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
 <div class="hero">
   <div class="wrap">
     <span class="pill">Prepared for the BlueAsset Group team</span>
-    <h1>More booked consultations you can <span>see, count and trust.</span></h1>
-    <p class="lead">Hi Chantel, Heinrich and the marketing team. This page sets out a simple 30 day pilot. We connect every ad, post and page to the one number that matters to your advisers: booked consultations.</p>
+    <h1>More booked consultations you can <span>trust and trace to their source.</span></h1>
+    <p class="lead">Hi Chantel, Heinrich and the marketing team. This page sets out a simple 30 day pilot with one outcome in mind: more booked consultations for your advisers, where you can see exactly where each one came from, without your team doing the chasing.</p>
     <div class="ctas">
       <!-- PLACEHOLDER: Ruben to replace #pay with the Paystack payment link -->
       <a href="#pay" class="btn btn-pay">Start the 30 day pilot</a>
@@ -166,7 +180,26 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
   </div>
 </div>
 
-<section id="understand">
+<section id="changes">
+  <div class="wrap">
+    <div class="kicker">What changes for you</div>
+    <h2>Before and after the pilot.</h2>
+    <div class="ba">
+      <div class="ba-head"><span></span><span>Before</span><span>After</span></div>
+      <div class="ba-row"><div class="ba-k">Trust</div><div class="ba-b">Careful investors Google you, and the results do not tell your full story.</div><div class="ba-a">They find a licensed, reviewed, press covered company with real people behind it, and a steady flow of helpful articles and posts.</div></div>
+      <div class="ba-row"><div class="ba-k">Visibility</div><div class="ba-b">No clear line from a post or ad to a booking.</div><div class="ba-a">You see which posts, ads and pages bring consultations, and what each one costs.</div></div>
+      <div class="ba-row"><div class="ba-k">Follow up</div><div class="ba-b">Warm interest can go cold before an adviser reaches them.</div><div class="ba-a">Every enquiry gets a quick reply, books straight into an adviser's diary, and gets followed up if it goes quiet.</div></div>
+      <div class="ba-row"><div class="ba-k">Advisers</div><div class="ba-b">Advisers chase leads.</div><div class="ba-a">Advisers spend their time on consultations, so new advisers start earning sooner.</div></div>
+      <div class="ba-row"><div class="ba-k">Leadership</div><div class="ba-b">Guesswork.</div><div class="ba-a">One short weekly report with leads, bookings, show rate and cost per booked consultation.</div></div>
+    </div>
+    <div class="roles">
+      <div class="role"><b>For operations:</b> control and accountability across every adviser and every lead.</div>
+      <div class="role"><b>For marketing:</b> proof of what your marketing produces, in numbers your CEO will trust.</div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="understand">
   <div class="wrap">
     <div class="kicker">What we understand</div>
     <h2>You have built something real. Now the marketing needs to show it.</h2>
@@ -178,88 +211,97 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
   </div>
 </section>
 
-<section class="alt" id="found">
+<section id="found">
   <div class="wrap">
     <div class="kicker">What we found</div>
-    <h2>Five things that are easy to fix and worth fixing first.</h2>
-    <p class="sub">We looked only at what anyone can see in public. Your team already does a lot. These are the gaps between that effort and booked consultations.</p>
+    <h2>Six things that cost you bookings today, and are easy to fix.</h2>
+    <p class="sub">We looked only at what anyone can see in public, on 3 November 2026. These are the gaps between your team's effort and booked consultations.</p>
     <div class="grid g2">
-      <div class="card gap"><div class="num">01</div><h3>What people find when they search your name</h3><p>A careful investor will Google you before they book. Right now the search results do not tell your full story. Your site does not yet show your team, your 4.8 star Google reviews or your press.</p><div class="fix"><b>Fix:</b> a trust page with your team, reviews, press and FSCA licence, plus a steady flow of new reviews.</div></div>
-      <div class="card gap"><div class="num">02</div><h3>You cannot see which posts and ads create bookings</h3><p>The Meta Pixel counts page views only, and the Google Tag Manager container on the site is set up but empty. So there is no clear line from a click to a booked consultation.</p><div class="fix"><b>Fix:</b> GTM, GA4 and Meta lead and booking events, with one simple weekly report.</div></div>
-      <div class="card gap"><div class="num">03</div><h3>Google sees every page as the same page</h3><p>Every page on the site shares one title and description, and there is no sitemap. That makes it hard to show up for searches like retirement income plan South Africa.</p><div class="fix"><b>Fix:</b> page titles, descriptions and a sitemap, or focused landing pages.</div></div>
-      <div class="card gap"><div class="num">04</div><h3>Lots of posts, not yet much reach</h3><p>Your team posts often, which is great. The next step is a system behind the posts: retargeting, a clear offer and follow up for the people who show interest.</p><div class="fix"><b>Fix:</b> signed off creatives tested every week, linked to a booking page.</div></div>
-      <div class="card gap" style="grid-column:1/-1"><div class="num">05</div><h3>Interest does not yet flow into a booked time</h3><p>Today a prospect can WhatsApp, call or fill in a form. There is no booking calendar and no automatic follow up, so warm people can go cold before an adviser reaches them.</p><div class="fix"><b>Fix:</b> a consultation calendar linked to adviser diaries, with SMS, WhatsApp and email reminders and follow up.</div></div>
+      <div class="card gap"><div class="num">01</div><h3>Careful investors may not book after they search your name</h3><p>A careful investor will Google you before they book. Right now the search results do not tell your full story. Your site does not yet show your team, your 4.8 star Google reviews or your press, and there is little fresh, helpful content with your name on it.</p><div class="fix"><b>What you get:</b> a page that shows your team, reviews, press and FSCA licence, plus a steady flow of helpful articles, so good, current content is what people find.</div></div>
+      <div class="card gap"><div class="num">02</div><h3>Your Google profile does not help people book</h3><p>You have 4.8 stars from 13 reviews, which is a great start. But the profile looks unclaimed, it has no phone number, no team or office photos, no updates, no booking link and a general category. The newest reviews are about 7 months old, with no replies.</p><div class="fix"><b>What you get:</b> a claimed and complete Google profile with your phone number, photos, booking link, the right category, regular updates, replies to reviews and a steady flow of new reviews.</div></div>
+      <div class="card gap"><div class="num">03</div><h3>You cannot tell which posts and ads bring bookings</h3><p>Your website and ads count visits, but not enquiries or booked consultations. So there is no clear line from a post or ad to a booking, and no way to know what to spend more on.</p><div class="fix"><b>What you get:</b> tracking on your website and ads that follows each person from first click to booked consultation, in one simple weekly report.</div></div>
+      <div class="card gap"><div class="num">04</div><h3>People searching for what you offer may not find you</h3><p>Google sees every page on your site as the same page, because they all share one title and description. That makes it hard to show up when someone searches for a retirement income plan.</p><div class="fix"><b>What you get:</b> each key page clearly labelled, so Google can tell your pages apart, plus helpful articles that answer the questions your clients ask.</div></div>
+      <div class="card gap"><div class="num">05</div><h3>Your social posts are not bringing in bookings</h3><p>Posting has slowed since August, and posts do not yet lead to bookings. Most posts are general motivational graphics with a handful of likes. They do not yet show your team, your IS21 launch or a clear way to book.</p><div class="fix"><b>What you get:</b> regular posts with real people, IS21 news and useful education, made from your website articles, each one linking to a booking.</div></div>
+      <div class="card gap"><div class="num">06</div><h3>Warm interest goes cold before it becomes a booking</h3><p>Today a prospect can WhatsApp, call or fill in a form. There is no booking calendar and no automatic follow up, so warm people can go cold before an adviser reaches them.</p><div class="fix"><b>What you get:</b> prospects book straight into an adviser's diary, with SMS, WhatsApp and email reminders and follow up handled for you.</div></div>
     </div>
   </div>
 </section>
 
-<section id="plan">
+<section class="alt" id="plan">
   <div class="wrap">
     <div class="kicker">The 30 day pilot</div>
-    <h2>One goal: a clear, working path from first click to booked consultation.</h2>
+    <h2>What you get: a clear, working path from first click to booked consultation.</h2>
     <div class="grid g2">
-      <div class="card"><div class="icon">1</div><h3>Tracking you can trust</h3><p>GTM, GA4 and Meta conversion events from click to lead to booked consultation, so you know what works and what to stop.</p></div>
-      <div class="card"><div class="icon">2</div><h3>A trust page that answers the hard questions</h3><p>Team, Google reviews, IS21 press, FSCA licence and how your structure works, in plain English.</p></div>
-      <div class="card"><div class="icon">3</div><h3>Booking calendar and follow up</h3><p>A consultation calendar with automated reminders and follow up, a clear sales pipeline, and every lead routed to the right adviser.</p></div>
-      <div class="card"><div class="icon">4</div><h3>SEO basics done right</h3><p>A unique title and description for each key page, plus a sitemap, so Google understands what you offer.</p></div>
+      <div class="card"><div class="icon">1</div><h3>Numbers you can trust</h3><p>You see every enquiry and booking, and which post, ad or page it came from, so you know what works and what to stop.</p></div>
+      <div class="card"><div class="icon">2</div><h3>A page that answers the hard questions</h3><p>Your team, Google reviews, IS21 press, FSCA licence and how your structure works, in plain English.</p></div>
+      <div class="card"><div class="icon">3</div><h3>Bookings without the chasing</h3><p>A consultation calendar with automatic reminders and follow up, a clear sales pipeline, and every lead sent to the right adviser.</p></div>
+      <div class="card"><div class="icon">4</div><h3>A Google profile that brings calls and bookings</h3><p>Claimed and complete: phone number, team and office photos, booking link, the right category, regular updates, replies to reviews, and a steady flow of new reviews from happy clients.</p></div>
+      <div class="card"><div class="icon">5</div><h3>Helpful articles that bring the right people</h3><p>Two articles a month on your website, answering the questions investors ask. Each one is turned into social posts, so there is a steady flow of helpful, current content with your name on it.</p></div>
+      <div class="card"><div class="icon">6</div><h3>Easier to find on Google</h3><p>Each key page clearly labelled, so Google understands what you offer and shows the right page. We do not promise rankings, but we do make sure Google can read your site properly.</p></div>
     </div>
+    <p class="sub" style="margin-top:20px;font-size:15px">Every article, post and profile update is checked for facts and compliance, and signed off by BlueAsset before it goes live.</p>
   </div>
 </section>
 
-<section class="alt how" id="how">
+<section class="how" id="how">
   <div class="wrap">
     <div class="kicker">How it works</div>
-    <h2>The tools, what we need, and what happens every week.</h2>
+    <h2>What you get, what we need, and what happens every week.</h2>
 
-    <div class="subh">1. The tech stack</div>
+    <div class="subh">1. What we set up for you</div>
     <div class="stack">
       <div class="row"><div class="dot">CRM</div><div><b>CRM and workflow automations</b><span>A clear sales pipeline for tracking and accountability, a consultation booking calendar, and all client communication (SMS, WhatsApp and email) in one place, with a live dashboard.</span></div></div>
-      <div class="row"><div class="dot">TRK</div><div><b>GTM, GA4 and Meta conversions</b><span>Tracking from click to booked consultation.</span></div></div>
-      <div class="row"><div class="dot">WEB</div><div><b>Website trust page and SEO titles</b><span>Team, reviews, press and FSCA licence on your site, or on our own landing pages if easier.</span></div></div>
+      <div class="row"><div class="dot">TRK</div><div><b>Tracking on your website and ads</b><span>See every step from first click to booked consultation.</span></div></div>
+      <div class="row"><div class="dot">WEB</div><div><b>A trust page, and pages Google can tell apart</b><span>Team, reviews, press and FSCA licence on your site, or on our own landing pages if easier.</span></div></div>
       <div class="row"><div class="dot">ADS</div><div><b>Meta and Google ads</b><span>Only after tracking works and the copy has your compliance sign off.</span></div></div>
       <div class="row"><div class="dot">IN</div><div><b>LinkedIn outreach <span class="opt">Optional</span></b><span>Short, personal messages to the people you choose.</span></div></div>
-      <div class="row"><div class="dot">ART</div><div><b>Canva creatives</b><span>On brand ads and posts your team can edit too.</span></div></div>
+      <div class="row"><div class="dot">ART</div><div><b>Ads and posts</b><span>On brand designs your team can edit too.</span></div></div>
+      <div class="row"><div class="dot">MAP</div><div><b>Your Google profile</b><span>Claimed, completed and kept up to date, with review requests and replies.</span></div></div>
+      <div class="row"><div class="dot">TXT</div><div><b>Helpful articles</b><span>Two a month on your website, each turned into social posts that link to a booking.</span></div></div>
     </div>
 
     <div class="subh">2. What we need from you</div>
     <div class="grid g2" style="margin-top:18px">
       <div class="card"><ul class="ticks">
-        <li>Admin access to the website, GTM, Meta Business Manager and Google Business Profile</li>
+        <li>Admin access to your website and ad accounts</li>
+        <li>Access to your Google Business Profile, or help to claim it</li>
         <li>One compliance sign off contact who can reply within 48 hours</li>
-        <li>Adviser calendars and how leads should be routed</li>
+        <li>Adviser calendars and who should get which leads</li>
       </ul></div>
       <div class="card"><ul class="ticks">
-        <li>Proof material: reviews, press, team photos and FSCA details</li>
+        <li>Proof material: reviews, press, team and office photos and FSCA details</li>
         <li>An ad budget, only if and when ads run (paid directly to Meta or Google)</li>
       </ul></div>
     </div>
 
-    <div class="subh">3. Every week</div>
+    <div class="subh">3. What you get every week</div>
     <div class="grid g3" style="margin-top:18px">
-      <div class="card"><h3>Pipeline checks</h3><p>We check the pipeline and follow up so no lead sits waiting.</p></div>
-      <div class="card"><h3>2 to 4 new creatives</h3><p>Signed off creatives and landing page tests, one change at a time.</p></div>
-      <div class="card"><h3>Google review requests</h3><p>Happy clients get a simple request to share their experience.</p></div>
-      <div class="card"><h3>Weekly report</h3><p>Leads, bookings, show rate and cost per booked consultation.</p></div>
-      <div class="card"><h3>Monthly review call</h3><p>20 minutes to agree what to keep, change or stop.</p></div>
-      <div class="card" style="background:var(--navy);border-color:var(--navy)"><h3 style="color:#fff">You stay in control</h3><p style="color:#c9d2e3">Your brand, your accounts, your data. Nothing goes live without your sign off.</p></div>
+      <div class="card"><h3>No lead left waiting</h3><p>We check the pipeline and follow up every week.</p></div>
+      <div class="card"><h3>2 to 4 new ads or posts</h3><p>Signed off and tested, one change at a time, so you learn what works.</p></div>
+      <div class="card"><h3>An active Google profile</h3><p>Regular updates, replies to reviews, and a simple review request for happy clients.</p></div>
+      <div class="card"><h3>New articles each month</h3><p>Two helpful articles a month, turned into social posts, all signed off by you.</p></div>
+      <div class="card"><h3>A short weekly report</h3><p>Leads, bookings, show rate and cost per booked consultation.</p></div>
+      <div class="card"><h3>A monthly review call</h3><p>20 minutes to agree what to keep, change or stop.</p></div>
+      <div class="card" style="background:var(--navy);border-color:var(--navy);grid-column:1/-1"><h3 style="color:#fff">You stay in control</h3><p style="color:#c9d2e3">Your brand, your accounts, your data. Nothing goes live without your sign off.</p></div>
     </div>
   </div>
 </section>
 
-<section id="timeline">
+<section class="alt" id="timeline">
   <div class="wrap">
     <div class="kicker">Timeline</div>
     <h2>Live within 10 business days of access and approvals.</h2>
     <div class="tl">
-      <div class="step"><div class="wk">W1</div><h3>Set up</h3><p>Kick off call, access, adviser routing, tracking plan and compliance contact.</p></div>
-      <div class="step"><div class="wk">W2</div><h3>Build and launch</h3><p>Tracking live, booking calendar and follow up, trust page and page titles.</p></div>
-      <div class="step"><div class="wk">W3</div><h3>Test</h3><p>First signed off creatives and landing tests. Fix any gaps in the funnel.</p></div>
-      <div class="step"><div class="wk">W4</div><h3>Review</h3><p>Pilot report with the numbers, what we learned and a plan for month two.</p></div>
+      <div class="step"><div class="wk">W1</div><h3>A clear plan</h3><p>Kick off call, access in place, Google profile claimed, leads mapped to advisers, compliance contact agreed and article topics chosen.</p></div>
+      <div class="step"><div class="wk">W2</div><h3>Everything live</h3><p>Tracking working, booking calendar and follow up running, trust page live and your Google profile completed.</p></div>
+      <div class="step"><div class="wk">W3</div><h3>First tests running</h3><p>First article published and turned into posts, review requests going out, and first signed off ads and pages tested.</p></div>
+      <div class="step"><div class="wk">W4</div><h3>Your pilot report</h3><p>The numbers, what we learned, the second article live, and a plan for month two.</p></div>
     </div>
   </div>
 </section>
 
-<section class="alt" id="pricing">
+<section id="pricing">
+
   <div class="wrap">
     <div class="kicker">Pricing</div>
     <h2>A founding pilot price, clear and simple.</h2>
@@ -270,8 +312,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
         <div class="big">R15,000 <small>to start</small></div>
         <div class="then">R7,500 setup plus R7,500 for the first 4 weeks. Then R10,000 every 4 weeks only if you continue.</div>
         <ul class="ticks" style="margin-top:16px">
-          <li>Everything in the pilot plan above</li>
-          <li>Weekly report and monthly 20 minute review</li>
+          <li>Everything in the pilot above: tracking, trust page, Google profile, booking calendar, follow up, articles and clearer pages</li>
+          <li>A short weekly report and a monthly 20 minute review</li>
           <li>No lock in after the first 4 weeks</li>
           <li>Ad spend is separate and paid directly to Meta or Google</li>
         </ul>
@@ -298,7 +340,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
   </div>
 </section>
 
-<section id="founder">
+<section class="alt" id="founder">
   <div class="wrap">
     <div class="kicker">A note from Ruben</div>
     <div class="founder" style="margin-top:22px">
@@ -309,7 +351,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
       <blockquote>
         <p>I am a pilot, and I run marketing the way I fly. Checklists. Clear numbers. No guessing.</p>
         <p>Before every flight you check the instruments, because you cannot fly well on feelings. Marketing is the same. This pilot makes sure your instruments work: you see every lead, every booking and what it cost. Then we improve one thing at a time.</p>
-        <p>We are a young agency, so I will not show you made up case studies. I will show you a clean setup, honest weekly numbers and a team that does what it says.</p>
+        <p>You will see real work from businesses we run and support, and honest weekly numbers from day one. A clean setup, and a team that does what it says.</p>
         <div class="sig">Ruben Venter<span>Founder, Ads Creation Centre</span></div>
       </blockquote>
     </div>
