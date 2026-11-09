@@ -73,6 +73,23 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
 @media (max-width:860px){.links{display:none}.cols{grid-template-columns:1fr}}
 @media (max-width:640px){.nums{grid-template-columns:1fr;gap:10px}.num{padding:16px 18px}.entry{padding:22px 18px;border-radius:18px}.entry .aim{font-size:16px}}
 .sec-gap{margin-top:44px}
+.services{margin:0 0 8px}
+.svc-groups{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grp{background:#fff;border:1px solid #e1e6ee;border-radius:20px;padding:22px 22px 14px;box-shadow:0 4px 18px rgba(19,22,40,.04);border-top:4px solid var(--blue)}
+.grp h3{font-family:var(--serif);font-size:19px;letter-spacing:-.2px;color:var(--paperInk);margin-bottom:10px}
+.grp ul{list-style:none}.grp li{padding:10px 0;border-top:1px solid #edf0f5}.grp li:first-child{border-top:0;padding-top:2px}
+.grp li b{display:block;font-size:15px;color:var(--paperInk);margin-bottom:2px}
+.grp li span{display:block;font-size:14px;line-height:1.5;color:#4a5466}
+.wedo{margin-top:18px;background:#f6f8fb;border-radius:16px;padding:20px 22px}
+.wedo h3{font-size:12.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chips span{font-size:12.5px;font-weight:600;color:#0f1e36;background:#fff;border:1px solid #d5dfec;border-radius:999px;padding:5px 12px}
+.svcs{display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
+.svc h4{font-size:14.5px;font-weight:700;color:var(--paperInk);margin-bottom:3px}
+.svc p{font-size:14.5px;line-height:1.55;color:#2a3446}
+@media (max-width:860px){.svc-groups,.svcs{grid-template-columns:1fr}}
+@media (max-width:640px){.wedo{padding:16px}.grp{padding:18px 18px 10px}}
+
 .num em{display:block;font-style:normal;font-size:13px;line-height:1.4;color:#e3eaf5;margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.12)}
 .sec-head{margin:0 0 20px}.sec-head .sec{margin:0;font-size:26px}.sec-sub{color:var(--paperMuted);font-size:15px;margin-top:2px}
 .proofs{display:grid;grid-template-columns:minmax(0,720px);gap:16px;margin-top:18px}
@@ -134,7 +151,39 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
 <main class="paper">
   <div class="wrap">
 
-    <div class="sec-head"><p class="sec">Current growth partners</p><p class="sec-sub">Brands ACC works with today.</p></div>
+    <section class="services" id="what-we-do">
+      <div class="sec-head"><p class="sec">What we do</p><p class="sec-sub">One partner for the systems that turn attention into revenue.</p></div>
+      <div class="svc-groups">
+        <div class="grp">
+          <h3>Pipeline and CRM</h3>
+          <ul>
+            <li><b>CRM and pipeline setup</b><span>Every lead lands in one place, with a clear pipeline from first contact to signed deal.</span></li>
+            <li><b>Workflow automations and follow up</b><span>Confirmations, reminders and follow ups go out on their own, so no lead goes cold.</span></li>
+            <li><b>Tracking and reporting</b><span>See which channel brings in leads and revenue, in reports you can take to leadership.</span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <h3>Lead generation</h3>
+          <ul>
+            <li><b>Inbound lead generation</b><span>Google Ads, Meta and LinkedIn ads, SEO and AI search bring buyers to you when they are looking.</span></li>
+            <li><b>Outbound lead generation</b><span>Researched lists of the right decision makers, so your team talks to people who can buy.</span></li>
+            <li><b>LinkedIn outreach</b><span>Short, direct messages that open conversations with decision makers.</span></li>
+            <li><b>Email marketing and cold email</b><span>Cold email to new prospects and check ins with past clients, written to get replies.</span></li>
+            <li><b>WhatsApp outreach</b><span>Quick, personal follow up where your buyers already chat.</span></li>
+          </ul>
+        </div>
+        <div class="grp">
+          <h3>Brand and web</h3>
+          <ul>
+            <li><b>Websites and landing pages</b><span>Fast, clear sites built to turn visitors into enquiries.</span></li>
+            <li><b>Funnels</b><span>A clear path from ad to enquiry to booking, so more visitors take the next step.</span></li>
+            <li><b>Social media design and management</b><span>On brand posts designed, planned and scheduled for every channel.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="sec-head sec-gap"><p class="sec">Current growth partners</p><p class="sec-sub">Brands ACC works with today.</p></div>
 
     <article class="entry" id="bpi">
       <span class="tag">United States &middot; commercial solar</span>
@@ -147,23 +196,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> USD 60 million in revenue and USD 4 million in signed, closed deals generated from 10,000 cold emails sent, over four years of working with BPi Power across Puerto Rico, the United States and North America.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Ran LinkedIn and email outreach across Puerto Rico, the United States and North America</li>
-            <li>Rebuilt and upgraded website pages, project stories and tracking</li>
-            <li>Drafted website lead and past client check-ins</li>
-            <li>Planned and scheduled social posts from real project work</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Measured so far</h3>
-          <ul>
-            <li>USD 60 million in revenue</li>
-            <li>USD 4 million in signed, closed deals generated from 10,000 cold emails sent</li>
-            <li>Four years as BPi Power's growth partner</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for BPi Power</h3>
+        <div class="chips"><span>Cold email</span><span>LinkedIn outreach</span><span>Websites</span><span>Social media</span><span>SEO and AI search</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Email marketing and cold email</h4><p>10,000 cold emails sent, generating USD 4 million in signed, closed deals. Check in emails drafted for website leads and past clients.</p></div>
+          <div class="svc"><h4>LinkedIn outreach</h4><p>LinkedIn outreach across Puerto Rico, the United States and North America.</p></div>
+          <div class="svc"><h4>Websites and landing pages</h4><p>Rebuilt and upgraded website pages and project stories, and designed and built a complete new website, now in preview.</p></div>
+          <div class="svc"><h4>Social media design and management</h4><p>Social posts designed from real project work, then planned and scheduled ahead.</p></div>
+          <div class="svc"><h4>SEO and AI search</h4><p>Monthly checks on whether AI search tools name BPi Power when buyers ask.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Website tracking set up and audited, so every lead can be traced to its source.</p></div>
         </div>
       </div>
       <div class="proofs two">
@@ -189,19 +231,16 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> One R5.89 click in week one of Google Ads became a paid R1,500 consultation, about 254 times the spend. The full growth stack went live in 11 days: CRM on day 1, new website on day 4, online booking on day 6, Google Ads on day 11.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Built the CRM on day 1 with 4 pipelines: bookings, aviation renewals, partners, corporate and occupational</li>
-            <li>Rebuilt and launched the website on day 4</li>
-            <li>Switched on online booking with confirmations and reminders on day 6</li>
-            <li>Launched Google Ads Search on day 11</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Why it matters</h3>
-          <p>From kickoff on 22 Oct the practice could capture leads, book patients online and run paid search, without months of build. Week one of ads paid for itself many times over.</p>
+      <div class="wedo">
+        <h3>What we do for Clinotrend</h3>
+        <div class="chips"><span>CRM</span><span>Automations</span><span>Google Ads</span><span>Websites</span><span>Social media</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>CRM and pipeline setup</h4><p>CRM live on day 1 with 4 pipelines: bookings, aviation renewals, partners, corporate and occupational.</p></div>
+          <div class="svc"><h4>Workflow automations and follow up</h4><p>Online booking with confirmations and reminders from day 6, plus new lead alerts, WhatsApp chat lead capture and a review request after each visit.</p></div>
+          <div class="svc"><h4>Google Ads</h4><p>Google Ads Search live on day 11. One R5.89 click became a paid R1,500 consultation, about 254 times the spend.</p></div>
+          <div class="svc"><h4>Websites and landing pages</h4><p>Website rebuilt and launched on day 4, growing from 1 public page to 8.</p></div>
+          <div class="svc"><h4>Social media design and management</h4><p>Google Business Profile photos and posts designed for the practice.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Analytics with key events for bookings, calls, WhatsApp and forms, so every enquiry is counted.</p></div>
         </div>
       </div>
       <div class="proofs two">
@@ -233,23 +272,17 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> Website rewrite, relaunched blog and three lead tools live in about 10 days, with LinkedIn and email outreach running and warm replies routed into the CRM.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Designed a complete new website</li>
-            <li>Rewrote and published all 8 main pages (8 Oct)</li>
-            <li>Relaunched the blog (16 Oct) and three lead tools (18 Oct)</li>
-            <li>Installed tracking and a weekly outreach vs traffic dashboard</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>Website, blog and lead tools live in about 10 days</li>
-            <li>LinkedIn and email outreach running</li>
-            <li>Warm replies logged in the CRM for follow up</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for TIA Energy</h3>
+        <div class="chips"><span>Websites</span><span>LinkedIn outreach</span><span>Cold email</span><span>CRM</span><span>Social media</span><span>SEO and AI search</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Websites and landing pages</h4><p>Designed a complete new website. Rewrote and published all 8 main pages (8 Oct), relaunched the blog (16 Oct) and added three lead tools (18 Oct): savings calculator, bill check and funding guide.</p></div>
+          <div class="svc"><h4>LinkedIn outreach</h4><p>LinkedIn campaigns running for the TIA team.</p></div>
+          <div class="svc"><h4>Email marketing and cold email</h4><p>Cold email outreach running to targeted decision makers.</p></div>
+          <div class="svc"><h4>CRM and pipeline setup</h4><p>Warm replies logged in the CRM for follow up.</p></div>
+          <div class="svc"><h4>Social media design and management</h4><p>LinkedIn company page and personal banners designed.</p></div>
+          <div class="svc"><h4>SEO and AI search</h4><p>Page by page SEO audit and monthly AI search checks.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Tracking installed, with a weekly dashboard of outreach against website traffic.</p></div>
         </div>
       </div>
       <div class="proofs">
@@ -271,24 +304,17 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> A live landing page for multifamily developers in California, Texas and Florida, with every enquiry routed into the CRM and fully tracked, backed by research on 1,395 multifamily companies for GOGETit&rsquo;s sales team.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Built and launched the gogetit-dev.com landing page</li>
-            <li>Connected the project form to the sales CRM</li>
-            <li>Set up analytics and session tracking on every call to action and lead</li>
-            <li>Researched decision makers at 1,395 multifamily companies</li>
-            <li>Wrote LinkedIn and email sequences, plus website articles</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>Landing page live with a working project form</li>
-            <li>Every enquiry lands in the CRM and is tracked</li>
-            <li>A researched market of 1,395 multifamily companies</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for GOGETit</h3>
+        <div class="chips"><span>Landing pages</span><span>CRM</span><span>Outbound</span><span>LinkedIn outreach</span><span>Cold email</span><span>SEO and AI search</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Websites and landing pages</h4><p>Built and launched the gogetit-dev.com landing page for multifamily developers in California, Texas and Florida.</p></div>
+          <div class="svc"><h4>CRM and pipeline setup</h4><p>Project form connected to the sales CRM, so every enquiry lands with the team.</p></div>
+          <div class="svc"><h4>Outbound lead generation</h4><p>Researched decision makers at 1,395 multifamily companies.</p></div>
+          <div class="svc"><h4>LinkedIn outreach</h4><p>LinkedIn campaigns running for GOGETit&rsquo;s sales team.</p></div>
+          <div class="svc"><h4>Email marketing and cold email</h4><p>Cold email sequences written for developers and owners.</p></div>
+          <div class="svc"><h4>SEO and AI search</h4><p>Website articles written, plus monthly AI search checks.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Analytics and session tracking on every call to action and lead.</p></div>
         </div>
       </div>
     </article>
@@ -304,23 +330,17 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> A bigger website and a clean buyer list of 312 California decision makers, with email and LinkedIn sequences built for launch.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Cleaned 599 contacts down to 312 qualified decision makers</li>
-            <li>Grew the website to about 38 published pages and 4 blog posts</li>
-            <li>Built email and LinkedIn sequences</li>
-            <li>Drafted website lead and past client check-ins</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>312 qualified decision makers ready for outreach</li>
-            <li>About 38 published pages and 4 blog posts</li>
-            <li>Outreach sequences built across email and LinkedIn</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for OneRoof Solution</h3>
+        <div class="chips"><span>Websites</span><span>Outbound</span><span>Cold email</span><span>LinkedIn outreach</span><span>Social media</span><span>SEO and AI search</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Websites and landing pages</h4><p>Designed and built a new website, live since 2 Nov 2026. About 38 published pages and 4 blog posts.</p></div>
+          <div class="svc"><h4>Outbound lead generation</h4><p>Cleaned 599 contacts down to 312 qualified California decision makers.</p></div>
+          <div class="svc"><h4>Email marketing and cold email</h4><p>Cold email sequences built, plus check in emails for website leads and past clients.</p></div>
+          <div class="svc"><h4>LinkedIn outreach</h4><p>LinkedIn sequences built for the same decision makers.</p></div>
+          <div class="svc"><h4>Social media design and management</h4><p>Facebook and LinkedIn posts designed and scheduled.</p></div>
+          <div class="svc"><h4>SEO and AI search</h4><p>Monthly checks on whether AI search tools name OneRoof Solution when buyers ask.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Every tracking tag on the site audited and the Tag Manager setup rebuilt.</p></div>
         </div>
       </div>
       <div class="proofs two">
@@ -346,24 +366,14 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> The RE+ 2026 campaign is live on LinkedIn, a 20 page website rebuild is in review, and AI search fixes are written to put SSR in front of commercial roofers and solar installers.</p>
       <p class="credit">Current client ACC grows as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Ran the RE+ 2026 LinkedIn campaign with SSR branding and real product photos</li>
-            <li>Designed 11 LinkedIn posts leading up to RE+</li>
-            <li>Built a 20 page website rebuild</li>
-            <li>Checked AI search visibility and wrote fixes for key pages</li>
-            <li>Researched best fit roofers and solar installers for outreach</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>RE+ 2026 booth post live since 16 Oct 2026</li>
-            <li>Website rebuild ready for review</li>
-            <li>AI search gaps found, fixes written</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Solar SkyRack</h3>
+        <div class="chips"><span>Social media</span><span>Websites</span><span>SEO and AI search</span><span>Outbound</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Social media design and management</h4><p>RE+ 2026 booth campaign live on LinkedIn since 16 Oct, with 11 LinkedIn posts designed in the run up to the show.</p></div>
+          <div class="svc"><h4>Websites and landing pages</h4><p>A 20 page website rebuild built and in review.</p></div>
+          <div class="svc"><h4>SEO and AI search</h4><p>AI search visibility checked and fixes written for key pages.</p></div>
+          <div class="svc"><h4>Outbound lead generation</h4><p>Best fit roofers and solar installers researched for outreach.</p></div>
         </div>
       </div>
     </article>
@@ -420,21 +430,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> About 5 qualified companies a month from LinkedIn and Google, and outreach effectiveness about doubled.</p>
       <p class="aim"><b>Ad budget managed:</b> USD 3,000 to 10,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>LinkedIn brand awareness to support call centre outreach</li>
-            <li>Google Search and LinkedIn lead gen for large target companies</li>
-            <li>Precise decision maker targeting inside pre-defined accounts</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>5 qualified companies a month</li>
-            <li>Outreach effectiveness about 2x</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for NOW Money</h3>
+        <div class="chips"><span>Inbound</span><span>LinkedIn ads</span><span>Google Ads</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>LinkedIn and Google ads</h4><p>Google Search and LinkedIn lead gen for large target companies. About 5 qualified companies a month.</p></div>
+          <div class="svc"><h4>Account based targeting</h4><p>Precise decision maker targeting inside pre-defined accounts, plus LinkedIn brand awareness to support call centre outreach. Outreach effectiveness about 2x.</p></div>
         </div>
       </div>
     </article>
@@ -450,22 +451,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> About 450% better lead qualification and about 50% less lead handling time in 3 months, driven by a shift to LinkedIn.</p>
       <p class="aim"><b>Ad budget managed:</b> USD 3,000 to 10,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Shifted social budget to LinkedIn Ads for international buyers</li>
-            <li>Targeted people with budget and interest in Dubai residential property</li>
-            <li>Traded lead volume for far more qualified leads</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>~450% better lead qualification in 3 months</li>
-            <li>~50% less lead handling time for the sales team</li>
-            <li>Shift to LinkedIn drove the jump</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for JAD Global</h3>
+        <div class="chips"><span>Inbound</span><span>LinkedIn ads</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>LinkedIn ads</h4><p>Shifted social budget to LinkedIn Ads for international buyers with budget and interest in Dubai residential property.</p></div>
+          <div class="svc"><h4>Lead qualification</h4><p>Fewer leads, far better ones: about 450% better lead qualification and about 50% less lead handling time in 3 months.</p></div>
         </div>
       </div>
     </article>
@@ -481,22 +472,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> About AED 630 average cost per paid enrolment in month 1, website conversion up 35%, and a bigger ad budget on the back of the results.</p>
       <p class="aim"><b>Ad budget managed:</b> about USD 10,000 a month, our largest UAE budget.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Restructured paid ads across Google, Meta, TikTok and Snapchat</li>
-            <li>Improved website conversion paths for school enrolment</li>
-            <li>Ran peak enrolment campaigns against hundreds of open seats</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>~AED 630 cost per paid enrolment in month 1</li>
-            <li>Website conversion up 35%</li>
-            <li>Ad budget increased after results</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Liwa Education</h3>
+        <div class="chips"><span>Inbound</span><span>Paid social</span><span>Google Ads</span><span>Funnels</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Paid ads</h4><p>Restructured paid ads across Google, Meta, TikTok and Snapchat. About AED 630 cost per paid enrolment in month 1.</p></div>
+          <div class="svc"><h4>Funnels</h4><p>Improved website conversion paths for school enrolment, with website conversion up 35%, and ran peak enrolment campaigns against hundreds of open seats.</p></div>
         </div>
       </div>
     </article>
@@ -511,18 +492,14 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       </div>
       <p class="aim"><b>Result:</b> ACC grew FlyRobin from startup to over USD 10,000 a month in close to two years.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Serviced its Dubai clients as the delivery team</li>
-            <li>Built its internal processes and streamlined day to day operations</li>
-            <li>Built speed to lead and follow up automations</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Why it matters</h3>
-          <p>FlyRobin is proof ACC can build an agency&rsquo;s growth engine and its delivery engine at the same time: revenue up, clients served, and systems that keep leads moving without chasing.</p>
+      <div class="wedo">
+        <h3>What we do for FlyRobin</h3>
+        <div class="chips"><span>Automations</span><span>Follow up</span><span>Operations</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Growth</h4><p>Grew the agency from startup to over USD 10,000 a month in close to two years.</p></div>
+          <div class="svc"><h4>Client delivery</h4><p>Serviced its Dubai clients as the delivery team.</p></div>
+          <div class="svc"><h4>Workflow automations and follow up</h4><p>Built speed to lead and follow up automations.</p></div>
+          <div class="svc"><h4>Operations</h4><p>Built its internal processes and streamlined day to day operations.</p></div>
         </div>
       </div>
     </article>
@@ -538,22 +515,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> Cost per lead cut from about AED 1,250 to about AED 350, lead qualification up 50%, and landing page conversion about doubled.</p>
       <p class="aim"><b>Ad budget managed:</b> USD 3,000 to 10,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Audited ad accounts and rebuilt campaigns for UAE and KSA business setup</li>
-            <li>Targeted international clients across 50+ countries</li>
-            <li>Ran Google and LinkedIn lead generation</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>Cost per lead ~AED 1,250 to ~AED 350</li>
-            <li>Lead qualification up 50%</li>
-            <li>Landing page conversion about 2x</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Creation BC</h3>
+        <div class="chips"><span>Inbound</span><span>Google Ads</span><span>LinkedIn ads</span><span>Funnels</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Google and LinkedIn ads</h4><p>Audited ad accounts and rebuilt campaigns for UAE and KSA business setup, targeting international clients across 50+ countries. Cost per lead cut from about AED 1,250 to about AED 350.</p></div>
+          <div class="svc"><h4>Funnels</h4><p>Landing page conversion about doubled, with lead qualification up 50%.</p></div>
         </div>
       </div>
     </article>
@@ -569,22 +536,13 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> Campaigns drove about 25% of total enrolments. Website conversion rose from 1% to 1.5% in about a month, with about 70% of leads qualified.</p>
       <p class="aim"><b>Ad budget managed:</b> USD 3,000 to 10,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Took over paid ads and rebuilt budget and platform mix</li>
-            <li>Installed a live creatives dashboard and sales feedback loops</li>
-            <li>Built an enrolment funnel across Google, Meta, TikTok and Snapchat</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>Campaigns ~25% of total enrolments</li>
-            <li>Website conversion 1% to 1.5%</li>
-            <li>~70% lead qualification</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Teddy Bear Nurseries</h3>
+        <div class="chips"><span>Inbound</span><span>Paid social</span><span>Google Ads</span><span>Funnels</span><span>Tracking</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Paid ads</h4><p>Took over paid ads and rebuilt budget and platform mix across Google, Meta, TikTok and Snapchat. Campaigns drove about 25% of total enrolments.</p></div>
+          <div class="svc"><h4>Funnels</h4><p>Built an enrolment funnel. Website conversion rose from 1% to 1.5%, with about 70% of leads qualified.</p></div>
+          <div class="svc"><h4>Tracking and reporting</h4><p>Installed a live creatives dashboard and sales feedback loops.</p></div>
         </div>
       </div>
     </article>
@@ -600,20 +558,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> About 2.7x return on ad spend, with website conversion up from 1.2% to 2.1%.</p>
       <p class="aim"><b>Ad budget managed:</b> USD 3,000 to 10,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Ran seasonal Google Ads for Christmas, Ramadan and corporate events</li>
-            <li>Improved website conversion paths for catering enquiries</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>2.7x return on ad spend</li>
-            <li>Website conversion 1.2% to 2.1%, about 75% better</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Dish</h3>
+        <div class="chips"><span>Inbound</span><span>Google Ads</span><span>Funnels</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Google Ads</h4><p>Seasonal Google Ads for Christmas, Ramadan and corporate events, at about 2.7x return on ad spend.</p></div>
+          <div class="svc"><h4>Funnels</h4><p>Improved website conversion paths for catering enquiries. Website conversion rose from 1.2% to 2.1%.</p></div>
         </div>
       </div>
     </article>
@@ -629,22 +579,13 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> About 55% lead qualification in Europe and about 40% in the GCC. The results helped secure further investor budget to scale.</p>
       <p class="aim"><b>Ad budget managed:</b> about USD 3,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>LinkedIn brand and lead gen aimed at GCC CTOs</li>
-            <li>Google Search for high intent demand in Europe</li>
-            <li>Focused on healthcare, insurance, finance and niche sectors</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>~55% qualification rate in Europe</li>
-            <li>~40% qualification rate in the GCC</li>
-            <li>Further investor budget secured to scale</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for Leo CybSec</h3>
+        <div class="chips"><span>Inbound</span><span>LinkedIn ads</span><span>Google Ads</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>LinkedIn ads</h4><p>LinkedIn brand and lead gen aimed at GCC CTOs.</p></div>
+          <div class="svc"><h4>Google Ads</h4><p>Google Search for high intent demand in Europe.</p></div>
+          <div class="svc"><h4>Targeting</h4><p>Focused on healthcare, insurance, finance and niche sectors. Lead qualification about 55% in Europe and 40% in the GCC, which helped secure further investor budget to scale.</p></div>
         </div>
       </div>
     </article>
@@ -660,22 +601,12 @@ footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-s
       <p class="aim"><b>Result:</b> A sustainability campaign turned into what the client called a dynamic online movement, amplifying its message and engaging the right audience.</p>
       <p class="aim"><b>Ad budget managed:</b> about USD 3,000 a month.</p>
       <p class="credit">Client ACC grew as growth partner.</p>
-      <div class="cols">
-        <div class="box">
-          <h3>What we did</h3>
-          <ul>
-            <li>Managed the sustainability campaign&rsquo;s social media presence</li>
-            <li>Designed digital outreach that engaged the right audience</li>
-            <li>Kept creative and messaging aligned with brand values</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h3>Results</h3>
-          <ul>
-            <li>Campaign message amplified across social</li>
-            <li>Right audience engaged</li>
-            <li>Described by the client as a dynamic online movement</li>
-          </ul>
+      <div class="wedo">
+        <h3>What we do for PVI Sustainability</h3>
+        <div class="chips"><span>Social media</span></div>
+        <div class="svcs">
+          <div class="svc"><h4>Social media design and management</h4><p>Managed the sustainability campaign&rsquo;s social media presence, with creative and messaging kept in line with brand values.</p></div>
+          <div class="svc"><h4>Digital outreach</h4><p>Designed digital outreach that engaged the right audience and turned the campaign into what the client called a dynamic online movement.</p></div>
         </div>
       </div>
     </article>
